@@ -6,15 +6,11 @@ variable "resource_group_name" {
 variable "location" {
   description = "The Azure location where the resource group will be created."
   type        = string
-  
 }
 
 variable "tags" {
   description = "A map of tags to assign to the resource group."
   type        = map(string)
-  default     = {}
-  # Example: default = { environment = "dev", owner = "team" }
-  
 }
 
 variable "storage_account_name" {
@@ -35,5 +31,4 @@ variable "destination_folder_name" {
 variable "df_name" {
   description = "The name of the Data Factory."
   type        = string
-  
 }

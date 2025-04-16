@@ -1,4 +1,4 @@
-resource "azure_data_factory" "adf" {
+resource "azurerm_data_factory" "adf" {
     name                = var.df_name
     resource_group_name = var.resource_group_name
     location            = var.location
@@ -53,7 +53,7 @@ resource "azurerm_data_factory_dataset_binary" "destination_dataset" {
   }
 }
 
-resource "azurrm_data_factory_pipeline" "copy_date" {
+resource "azurerm_data_factory_pipeline" "copy_date" {
   name = "copy-data-pipeline"
   data_factory_id = azurerm_data_factory.adf.id
 
