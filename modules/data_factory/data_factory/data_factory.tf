@@ -20,7 +20,7 @@ data "azurerm_storage_account" "destination_folder_storage" {
 
 resource "azurerm_data_factory_linked_service_azure_blob_storage" "source" {
   name = "source-storage"
-  data_factory_id = azure_data_factory.adf.id
+  data_factory_id = azurerm_data_factory.adf.id
   connection_string = data.azurerm_storage_account.source_folder_storage.primary_connection_string
 }
 
