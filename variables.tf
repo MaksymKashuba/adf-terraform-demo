@@ -31,3 +31,9 @@ variable "destination_folder_name" {
     description = "The destination folder name for the storage container."
     type        = string 
 }
+
+variable "df_name" {
+  description = "The name of the Data Factory."
+  type        = string
+  
+}
