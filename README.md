@@ -8,8 +8,6 @@ The project is organized as follows:
 
 ```
 adf-terraform-demo/
-├── main.tf                  # Main Terraform configuration
-├── variables.tf             # Input variables definition
 ├── modules/
 │   ├── data_factory/
 │   │   └── data_factory/
@@ -20,6 +18,9 @@ adf-terraform-demo/
 │           ├── storage_account.tf # Storage Account resources
 │           ├── variables.tf       # Module variables
 ├── .gitignore               # Git ignore rules
+├── README.md                # Project description
+├── main.tf                  # Main Terraform configuration
+├── variables.tf             # Input variables definition
 ```
 
 ## Prerequisites
