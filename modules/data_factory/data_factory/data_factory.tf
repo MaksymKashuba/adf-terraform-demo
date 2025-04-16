@@ -43,7 +43,7 @@ resource "azurerm_data_factory_dataset_binary" "source_dataset" {
 }
 
 resource "azurerm_data_factory_dataset_binary" "destination_dataset" {
-  name = "destination-dataset"
+  name = "destination_dataset"
   data_factory_id = azurerm_data_factory.adf.id
   linked_service_name = azurerm_data_factory_linked_service_azure_blob_storage.destination.name
 
@@ -54,7 +54,7 @@ resource "azurerm_data_factory_dataset_binary" "destination_dataset" {
 }
 
 resource "azurerm_data_factory_pipeline" "copy_date" {
-  name = "copy-data-pipeline"
+  name = "copy_data_pipeline"
   data_factory_id = azurerm_data_factory.adf.id
 
   activities_json = <<JSON
