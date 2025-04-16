@@ -1,4 +1,4 @@
-# Terraform Azure Data Factory and Storage Account Project
+# Terraform ADF demo
 
 This project provisions an Azure Data Factory and associated resources, including a storage account with source and destination containers, using Terraform.
 
